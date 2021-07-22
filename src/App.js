@@ -3,7 +3,14 @@ import Particles from 'react-particles-js';
 import Navbar from './Component/Navbar';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from './Component/Header';
-function App() {
+import About from './Component/About';
+import Skills from './Component/MySkills';
+import Services from './Component/Services';
+import Contact from './Component/Contact';
+import Footer from './Component/Footer';
+
+function App()  {
+ 
   return (
     <>
     <Particles
@@ -17,7 +24,7 @@ function App() {
           }
         },
         shape:{
-          type:"star" ,
+          type:"circular" ,
           stroke:
           {
             widht:6,
@@ -27,8 +34,13 @@ function App() {
       }
     }}
     />
-    <Navbar />
-    <Header />
+    <Navbar  />
+    <Header data-aos="fade-left"/>
+    <About />
+    <Skills />
+    <Services />
+    <Contact />
+    <Footer />
     </>
   );
 }

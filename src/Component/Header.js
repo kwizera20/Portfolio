@@ -1,10 +1,13 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import Typed from 'react-typed';
+import '../App.css';
 
 const Header = () => {
     return (
-        <div className="header-wraper">
+        <section id="home">
+        <div className="header-wraper bg-dark">
+            <div className="container">
             <div className="main-info">
                 <h1>I'm KWIZERA Erneste</h1>
                 <Typed
@@ -14,9 +17,11 @@ const Header = () => {
                 backSpeed={60}
                 loop
                 />
-                <a  className="btn-main-offer" href="">Contact Me</a>
+                <a  className="btn-main-offer" href="#Contact">Contact Me</a>
                 </div>
                 </div>
+                </div>
+                </section>
     );
 }
 

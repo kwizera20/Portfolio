@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root
 {
   --white : #fff;
@@ -7,14 +12,28 @@
 }
 body
 {
+  height: 100%;
   width: 100%;
 }
 .logo
 {
 height: 60px;
 }
+.navbar-nav
+{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+}
 nav{
-  z-index: 2;
+  position: fixed;
+  z-index: 101;
 }
 .nav-link
 {
@@ -42,21 +61,20 @@ nav{
 
     /* this is needed or the background will be offset by a few pixels at the top */
 
-    background-image: url(last.jpg);
-    background-size:cover;
-    position: relative;
-    background-position: center;
+   /* background-image: url(last.jpg);*/
+
     height: 90vh;
-  
-    filter: blur(0px);
+    width: 100%;
 }
 .main-info > h1
 {
-  color: var(--blue);
+  color: gold;
 }
 .navbar-nav
 {
-  margin-left: auto;
+  
+  font-size: 20px;
+  text-transform: capitalize;
 }
 .main-info
 {
@@ -66,11 +84,12 @@ nav{
   left: 0;
   right: 0;
   bottom: 0;
+  z-index:100;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index:100;
+  
 }
 .typed-text
 {
@@ -96,13 +115,211 @@ nav{
 .tsparticles-canvas-el 
 {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
-}
-.menu
-{
-  position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+  color: blue;
+}
+.quote
+{
+  padding-top: 30px;
+  color: blanchedalmond;
+}
+.conta
+{
+  padding: 50px;
+border: 1px solid black;
+height: 300px;
+}
+.col-md-4 > h3
+{
+  padding: 50px;
+  color: #000;
+  font-size: 32px;
+}
+
+.skills
+{
+  height: 40vh;
+}
+.framework
+{
+  text-align: center;
+}
+.coins
+{
+  color: black;
+}
+#Services
+{
+  
+  background-color: gray;
+}
+.progressBar
+{
+  font-size: 40px;
+}
+.framework
+{
+  text-align: left;
+}
+progress
+{
+  padding: 30px;
+}
+.progressBar > label
+{
+  padding: 30px;
+  text-transform: uppercase;
+}
+.progressbar-new
+{
+  padding-bottom: 30px;
+}
+.service-wraper
+{
+  text-align: center;
+  font-size: 30px;
+  padding: 30px;
+}
+.service-wraper >h1
+{
+  padding: 20px;
+}
+.image-profile
+{
+  height: 350px;
+  padding: 40px;
+}
+.about-paragraph
+{
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.skills-content > h1
+{
+text-transform: capitalize;
+
+}
+.skills-content > p
+{
+  padding-bottom: 10px;
+  
+}
+.text-center
+{
+  padding: 90px;
+  text-transform: uppercase;
+  text-decoration: overline;
+}
+.skills-paragraph
+{
+  font-size: 30px;
+  
+}
+.about-wraper
+{
+  background-image: url(about-image.jpeg)
+}
+.myskills-wraper
+{
+ 
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.App{
+padding: 0;
+}
+
+.contact-wraper
+{
+  padding-top: 0;
+  
+}
+
+/* Contact.js */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  /* border: none; */
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+}
+
+.form > button {
+  padding: 20px;
+  border: none;
+  background-color: rgb(2, 2, 110);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+.form > button:hover {
+  background-color: rgb(0, 0, 196);
+}
+.container
+{
+  padding-top: 80px;
+}
+
+.footer-wraper
+{
+  height: 10px;
+}
+.footer
+{
+  height: 5vh;
+}
+.footer >p
+{
+  height: 20px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: bolder;
+}
+#Contact
+{
+  background-color: violet;
+}
+.progress
+{
+padding-right: 30px;
 }
